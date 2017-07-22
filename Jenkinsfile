@@ -20,12 +20,6 @@ pipeline {
 		}
 	  } 
     }
-    stage('Archive War') {
-      steps {
-		echo env.JOB_NAME
-		
-      }
-    }
   }
   post {
       success {
