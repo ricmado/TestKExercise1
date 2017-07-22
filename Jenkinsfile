@@ -15,7 +15,7 @@ pipeline {
         always {
         junit "build/test-results/test/TEST-org.gradle.examples.web.ServletTest.xml"
         }
-		sucess {
+		success {
 		sh 'gradle war'
 		}
 	  } 
@@ -28,7 +28,7 @@ pipeline {
     }
   }
   post {
-      sucess {
+      success {
 		archive "build/libs/hello-world-app.war"
 		
       }
