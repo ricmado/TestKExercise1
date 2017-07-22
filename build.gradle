@@ -18,3 +18,7 @@ dependencies {
 repositories {
   mavenCentral()
 }
+
+war {
+	archiveName = 'Hello_World_App.war'
+}
