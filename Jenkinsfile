@@ -23,7 +23,7 @@ pipeline {
   }
   post {
       success {
-		archive "build/libs/hello-world-app.war"
+		archive "build/libse/hello-world-app.war"
 		
       }
     }
