@@ -7,16 +7,22 @@ pipeline {
         gradle 'GradleAut'
         }
   stages {
-    stage('build') {
+    stage('Gradle Clean Test') {
       steps {
         sh 'gradle clean test'
         }
+	  post {
+        always {
+        junit "build/test-results/test/TEST-org.gradle.examples.web.ServletTest.xml"
+        }
+	  } 
     }
-    stage('run') {
+    stage('Archive War') {
       steps {
 		echo env.JOB_NAME
 		
       }
     }
+	
   }
 }
