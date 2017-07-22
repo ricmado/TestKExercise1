@@ -23,7 +23,7 @@ pipeline {
   }
   post {
       success {
-		archiveArtifacts artifacts: "./build/libs/*.war", fingerprint: true
+		archiveArtifacts artifacts: "build/libs/*.war", fingerprint: true
 		
       }
     }
