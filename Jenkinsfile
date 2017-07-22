@@ -23,7 +23,7 @@ pipeline {
   }
   post {
       success {
-		archive "build/libse/hello-world-app.war"
+		archiveArtifacts artifacts: "build/libse/hello-world-app.war", fingerprint: true
 		
       }
     }
