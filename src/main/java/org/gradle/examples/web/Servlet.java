@@ -12,6 +12,6 @@ public class Servlet extends HttpServlet
                      HttpServletResponse response)
       throws IOException
    {
-      response.getWriter().print("Hello, World");
+      response.getWriter().print("Hellos, World");
    }
 }
